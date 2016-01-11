@@ -24,4 +24,16 @@ if [ $? != "0"]; then
 fail
 fi
 
+mv authorized_keys /home/$USER/.ssh/
+
+if [ $? != "0"]; then
+fail
+fi
+
+mv bashrc.txt /home/$USER/.bashrc
+
+if [ $? != "0"]; then
+fail
+fi
+
 success
