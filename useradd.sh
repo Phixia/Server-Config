@@ -36,4 +36,10 @@ if [ $? != "0"]; then
 fail
 fi
 
+echo "$USER	ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
+
+if [ $? != "0"]; then
+fail
+fi
+
 success
