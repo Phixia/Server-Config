@@ -18,7 +18,7 @@ USER=
 # Put your shell here (I'm defaulting /bin/bash)
 SHELL="/bin/bash"
 
-/bin/useradd -m -s $SHELL $USER
+useradd -m -s $SHELL $USER
 
 if [ $? != "0"]; then
 fail
